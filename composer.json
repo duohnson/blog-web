@@ -1,0 +1,12 @@
+{
+    "name": "soporte/blog-web",
+    "authors": [
+        {
+            "name": "duohnson",
+            "email": "peadser98@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

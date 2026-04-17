@@ -1,3 +1,17 @@
+<?php
+
+require __DIR__ . '/vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+require __DIR__ . '/src/database/connect_to_db.php';
+
+$traer_articulos = $pdo->query("SELECT * FROM articulos");
+$articulos = $traer_articulos->fetchAll(PDO::FETCH_ASSOC);
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,7 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/static/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <title>Noticiero Informático</title>
+    <title>Artículos - Noticiero Informático</title>
 </head>
 <body>
     <header>
@@ -32,8 +46,14 @@
     </div>
 
     <div class="titulos">
-        <h2>Noticias destacadas</h2>
+        <h2>Artículos destacados</h2>
     </div>
-
+    <div class="articulos">
+        <?php foreach ($articulos as $articulo): ?>
+            <div class="articulo">
+                <h3><?php echo htmlspecialchars($articulo['titulo']); ?></h3>
+                <p><?php echo nl2br(htmlspecialchars($articulo['descripcion'])); ?></p>
+            </div>
+        <?php endforeach; ?>
 </body>
 </html>
