@@ -41,10 +41,10 @@ $articulos = $traer_articulos->fetchAll(PDO::FETCH_ASSOC);
         -->
     </header>
     <div class="botones">
-        <a href="welcome.html" class="boton">Inicio</a>
-        <a href="articulos.php" class="boton">Artículos</a>
-        <a href="noticias.html" class="boton">Noticias</a>
-        <a href="contacto.html" class="boton">Contacto</a>
+        <a href="welcome.html" class="botones_menu">Inicio</a>
+        <a href="articulos.php" class="botones_menu">Artículos</a>
+        <a href="noticias.html" class="botones_menu">Noticias</a>
+        <a href="contacto.html" class="botones_menu">Contacto</a>
     </div>
     <div>
         <hr>
@@ -55,7 +55,9 @@ $articulos = $traer_articulos->fetchAll(PDO::FETCH_ASSOC);
     <div class="articulos">
         <?php foreach ($articulos as $articulo): ?>
             <div class="articulo">
-                <h3 class="art_titulo"><?php echo htmlspecialchars($articulo['titulo']); ?></h3>
+                <a href="articulo.php?id=<?php echo $articulo['id']; ?>">
+                <h3 class="art_titulo no_color"><?php echo htmlspecialchars($articulo['titulo']); ?></h3>
+                </a>
                 <h3 class="art_autor"><?php echo htmlspecialchars($articulo['autor']); ?></h3>
                 <p class="art_descripcion"><?php echo nl2br(htmlspecialchars($articulo['descripcion'])); ?></p>
                 <p class="art_creado_en">Creado el: <?php echo htmlspecialchars($articulo['creado_en']); ?></p>
@@ -71,7 +73,7 @@ $articulos = $traer_articulos->fetchAll(PDO::FETCH_ASSOC);
             <p>2026 Noticiero Informático. Todos los derechos reservados. Developed by Daniel Uohnson</p>
             <p>Contacto: contacto@noticiasinformaticas.com</p>
         </div>
-        <div class="footer-derecha">
+        <div class="footer-derecha cartas">
             <div class="redes-sociales-footer">
                 <a href="https://www.facebook.com/" target="_blank">
                     <img src="src/static/img/face.png" alt="Facebook" class="face">
