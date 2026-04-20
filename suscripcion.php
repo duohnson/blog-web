@@ -49,9 +49,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <a href="noticias.html" class="boton">Noticias</a>
         <a href="contacto.html" class="boton">Contacto</a>
     </div>
+    <div>
+        <hr>
+    </div>
     <div class="suscripcion-confirmacion">
         <p class="suscripcion-confirmacion-titulo">¡Gracias por suscribirte!</p>
         <p class="suscripcion-confirmacion-descripcion">Ahora recibirás las últimas novedades del mundo de la informática directamente en tu correo electrónico.</p>
+    </div>
+    <div>
+        <hr>
     </div>
 </body>
     <footer>

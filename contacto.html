@@ -28,10 +28,13 @@
     </header>
 <body>
     <div class="botones">
-        <a href="welcome.html" class="boton">Inicio</a>
-        <a href="articulos.php" class="boton">Artículos</a>
-        <a href="noticias.html" class="boton">Noticias</a>
-        <a href="contacto.html" class="boton">Contacto</a>
+        <a href="welcome.html" class="botones_menu">Inicio</a>
+        <a href="articulos.php" class="botones_menu">Artículos</a>
+        <a href="noticias.html" class="botones_menu">Noticias</a>
+        <a href="contacto.html" class="botones_menu">Contacto</a>
+    </div>
+    <div>
+        <hr>
     </div>
     <div class="titulos">
         <h2>Contacto</h2>
@@ -39,13 +42,16 @@
     <div class="contacto-descripcion">
         <p>Si tienes alguna pregunta, sugerencia o deseas ponerte en contacto con nosotros, no dudes en enviarnos un correo electrónico a contacto@noticiasinformaticas.com</a>.</p>
     </div>
-    <div class="contacto-formulario">
+    <div class="contacto-formulario cartas">
         <form action="enviar_contacto.php" method="post">
             <input type="text" name="nombre" placeholder="Tu nombre" required>
             <input type="email" name="email" placeholder="Tu correo electrónico" required>
-            <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+            <textarea class="contacto-mensaje" name="mensaje" placeholder="Tu mensaje" required></textarea>
             <button class="boton" type="submit">Enviar</button>
         </form>
+    </div>
+    <div>
+        <hr>
     </div>
 </body>
     <footer>

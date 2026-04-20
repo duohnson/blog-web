@@ -46,6 +46,9 @@ $articulos = $traer_articulos->fetchAll(PDO::FETCH_ASSOC);
         <a href="noticias.html" class="boton">Noticias</a>
         <a href="contacto.html" class="boton">Contacto</a>
     </div>
+    <div>
+        <hr>
+    </div>
     <div class="titulos">
         <h2>Artículos destacados</h2>
     </div>
@@ -59,6 +62,9 @@ $articulos = $traer_articulos->fetchAll(PDO::FETCH_ASSOC);
                 <p class="art_divisor">-----------------------------------------------------------------</p>
             </div>
         <?php endforeach; ?>
+    </div>
+    <div>
+        <hr>
     </div>
     <footer>
         <div class="footer-izquierda">
