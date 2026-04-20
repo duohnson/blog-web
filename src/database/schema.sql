@@ -32,3 +32,4 @@ CREATE TABLE suscriptores (
   email VARCHAR(255) UNIQUE,
   creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+

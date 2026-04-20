@@ -96,3 +96,4 @@ $articulos = $traer_articulos->fetchAll(PDO::FETCH_ASSOC);
     </footer>
 </body>
 </html>
+
