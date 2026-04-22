@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/static/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <title>Noticiero Informático</title>
+    <title>Noticias - Noticiero Informático</title>
 </head>
 <body>
     <header>
@@ -36,22 +36,35 @@
         <hr>
     </div>
     <div class="titulos">
-        <h2>Contacto</h2>
+        <h2>Noticias destacadas</h2>
     </div>
-    <div class="contacto-descripcion">
-        <p>Si tienes alguna pregunta, sugerencia o deseas ponerte en contacto con nosotros, no dudes en enviarnos un correo electrónico a contacto@noticiasinformaticas.com</a>.</p>
-    </div>
-    <div class="contacto-formulario cartas">
-        <form action="enviar_contacto.php" method="post">
-            <input type="text" name="nombre" placeholder="Tu nombre" required>
-            <input type="email" name="email" placeholder="Tu correo electrónico" required>
-            <textarea class="contacto-mensaje" name="mensaje" placeholder="Tu mensaje" required></textarea>
-            <button class="boton" type="submit">Enviar</button>
-        </form>
+    <div class="contenedor-noticias">
+        <div class="cartas-noticias carta2">
+            <img src="src/img/apple.jpeg" alt="apple" class="noticia-imagen">
+            <div class="noticia-en-carta">
+                <h3 class="noticia-titulo">Fin de una era en Apple: Tim Cook dejará el cargo de CEO y John Ternus será el nuevo líder</h3>
+                <p class="noticia-descripcion">Apple estaría preparando un cambio histórico en su liderazgo, con una transición que marcaría la estrategia de producto, IA y servicios en los próximos años.</p>
+            </div>
+        </div>
+        <div class="cartas-noticias carta3">
+            <img src="src/img/cuantico.jpeg" alt="inte artificial" class="noticia-imagen">
+            <div class="noticia-en-carta">
+                <h3 class="noticia-titulo">Más allá de la IA, los fabricantes de semiconductores de EEUU afrontan la auténtica batalla del futuro: los chips cuánticos</h3>
+                <p class="noticia-descripcion">La carrera por el cómputo cuántico se acelera con inversiones millonarias, nuevas arquitecturas y una competencia global que promete cambiar la industria.</p>
+            </div>
+        </div>
+        <div class="cartas-noticias carta1">
+            <img src="src/img/amd.avif" alt="amd" class="noticia-imagen-estirado">
+            <div class="noticia-en-carta">
+                <h3 class="noticia-titulo">AMD busca alejar el fantasma de la burbuja: se dispara en Bolsa tras unas previsiones de fuerte crecimiento gracias a la IA</h3>
+                <p class="noticia-descripcion">Nuevos acuerdos, chips enfocados en IA y mejores previsiones financieras impulsan el optimismo en el mercado, elevando las expectativas para el sector.</p>
+            </div>
+        </div>
     </div>
     <div>
         <hr>
     </div>
+</body>
     <footer>
         <div class="footer-izquierda">
             <p>2026 Noticiero Informático. Todos los derechos reservados. Developed by Daniel Uohnson</p>
@@ -78,6 +91,5 @@
             </div>
         </div>
     </footer>
-</body>
 </html>
 

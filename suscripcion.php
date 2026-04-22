@@ -59,7 +59,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div>
         <hr>
     </div>
-</body>
     <footer>
         <div class="footer-izquierda">
             <p>2026 Noticiero Informático. Todos los derechos reservados. Developed by Daniel Uohnson</p>
@@ -86,5 +85,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         </div>
     </footer>
+</body>
 </html>
 

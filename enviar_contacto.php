@@ -1,3 +1,17 @@
+<?php
+
+$nombre = '';
+$email = '';
+$mensaje = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $nombre = $_POST['nombre'] ?? '';
+    $email = $_POST['email'] ?? '';
+    $mensaje = $_POST['mensaje'] ?? '';
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,7 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/static/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <title>Noticiero Informático</title>
+    <title>Mensaje enviado - Noticiero Informático</title>
 </head>
 <body>
     <header>
@@ -35,19 +49,17 @@
     <div>
         <hr>
     </div>
-    <div class="titulos">
-        <h2>Contacto</h2>
-    </div>
-    <div class="contacto-descripcion">
-        <p>Si tienes alguna pregunta, sugerencia o deseas ponerte en contacto con nosotros, no dudes en enviarnos un correo electrónico a contacto@noticiasinformaticas.com</a>.</p>
-    </div>
-    <div class="contacto-formulario cartas">
-        <form action="enviar_contacto.php" method="post">
-            <input type="text" name="nombre" placeholder="Tu nombre" required>
-            <input type="email" name="email" placeholder="Tu correo electrónico" required>
-            <textarea class="contacto-mensaje" name="mensaje" placeholder="Tu mensaje" required></textarea>
-            <button class="boton" type="submit">Enviar</button>
-        </form>
+    <div class="suscripcion-confirmacion">
+        <p class="suscripcion-confirmacion-titulo">¡Mensaje enviado!</p>
+        <p class="suscripcion-confirmacion-descripcion">Gracias por contactarnos, te responderemos lo antes posible.</p>
+        <div class="articulo">
+            <p class="art_autor">Nombre: <?php echo htmlspecialchars($nombre); ?></p>
+            <p class="art_creado_en">Correo: <?php echo htmlspecialchars($email); ?></p>
+            <p class="art_descripcion"><?php echo nl2br(htmlspecialchars($mensaje)); ?></p>
+        </div>
+        <div class="botones">
+            <a href="contacto.html" class="boton">Volver</a>
+        </div>
     </div>
     <div>
         <hr>
