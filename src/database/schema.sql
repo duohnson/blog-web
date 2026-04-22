@@ -18,14 +18,17 @@ ADD creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
 
 * Subir noticias a la DB
 
+DROP TABLE IF EXISTS noticias;
 CREATE TABLE noticias (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  titulo VARCHAR(255),
-  descripcion TEXT,
+  titulo VARCHAR(255) NOT NULL,
+  descripcion TEXT NOT NULL,
+  imagen VARCHAR(255),
+  categoria VARCHAR(100),
+  destacada TINYINT(1) DEFAULT 0,
+  fecha DATE DEFAULT CURDATE(),
   creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
-INSERT INTO noticias (titulo, descripcion) VALUES ('Noticia 1', 'Descripción de la noticia 1');
 
 CREATE TABLE suscriptores (
   id INT AUTO_INCREMENT PRIMARY KEY,

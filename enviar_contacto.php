@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="botones">
         <a href="welcome.html" class="botones_menu">Inicio</a>
         <a href="articulos.php" class="botones_menu">Artículos</a>
-        <a href="noticias.html" class="botones_menu">Noticias</a>
+        <a href="noticias.php" class="botones_menu">Noticias</a>
         <a href="contacto.html" class="botones_menu">Contacto</a>
     </div>
     <div>
