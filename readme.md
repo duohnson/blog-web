@@ -6,8 +6,8 @@
 
 ## Capturas de pantalla
 
-![Screenshot 1](screen1.png)
-![Screenshot 2](screen2.png)
+![Screenshot 1](/src/static/img/screen1.png)
+![Screenshot 2](/src/static/img/screen2.png)
 
 ## Requisitos
 
