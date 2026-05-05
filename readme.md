@@ -1,4 +1,4 @@
-# Blog Web
+# Noticias web
 
 Proyecto de blog simple en PHP con gestión de noticias y formulario de contacto, se desarrollo en php, html y css puro, para mantenerlo sencillo y fácil de entender. El sistema permite a los usuarios suscribirse a un boletín, enviar mensajes a través de un formulario de contacto y gestionar noticias mediante una interfaz administrativa. La base de datos MySQL se utiliza para almacenar artículos, suscriptores y mensajes de contacto.
 
