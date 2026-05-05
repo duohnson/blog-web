@@ -1,10 +1,13 @@
 # Noticias web
 
-Proyecto de blog simple en PHP con gestión de noticias y formulario de contacto, se desarrollo en php, html y css puro, para mantenerlo sencillo y fácil de entender. El sistema permite a los usuarios suscribirse a un boletín, enviar mensajes a través de un formulario de contacto y gestionar noticias mediante una interfaz administrativa. La base de datos MySQL se utiliza para almacenar artículos, suscriptores y mensajes de contacto.
-
 ## Descripción
 
-Sistema dinámico de noticias con formulario de contacto (SMTP de Gmail) y base de datos MySQL.
+**Este proyecto es una práctica.** Proyecto de blog simple en PHP con gestión de noticias y formulario de contacto, se desarrollo en php, html y css puro, para mantenerlo sencillo y fácil de entender. El sistema permite a los usuarios suscribirse a un boletín, enviar mensajes a través de un formulario de contacto y gestionar noticias mediante una interfaz administrativa. La base de datos MySQL se utiliza para almacenar artículos, suscriptores y mensajes de contacto.
+
+## Capturas de pantalla
+
+![Screenshot 1](screen1.png)
+![Screenshot 2](screen2.png)
 
 ## Requisitos
 
@@ -21,10 +24,14 @@ Sistema dinámico de noticias con formulario de contacto (SMTP de Gmail) y base 
 
 ## Archivos Principales
 
-- `index.php` - Página de inicio
+- `index.php` - Página de inicio (ligada a welcome.html)
+- `welcome.html` - Estructura visual de la página de inicio
 - `articulos.php` - Listado de artículos
+- `noticias.html` - Interfaz del formulario para crear noticias
 - `noticias.php` - Gestor de noticias
+- `subirnoticias.php` - Lógica para guardar las noticias
 - `contacto.html` - Formulario de contacto
+- `enviar_contacto.php` - Procesamiento del envío de contacto
 - `suscripcion.php` - Sistema de suscripción
 - `src/database/` - Conexión y esquema de BD
 
